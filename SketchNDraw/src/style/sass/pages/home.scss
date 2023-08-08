@@ -1,0 +1,101 @@
+#menu{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, var(--background-secondary) 0%, var(--background-primary) 100%);
+}
+
+.menu-items{
+    margin-left: clamp(4rem, 20vw,48rem);
+    z-index: 2;  
+}
+
+.menu-item{
+    font-size: 50px;
+    display: block;
+    padding: clamp(0.25rem,0.5vw,1rem)0rem;
+    color: var(--text-color);
+    transition: 0.5s ease;
+}
+
+.menu-items:hover > .menu-item:hover{
+    opacity: 1;
+    scale: 2;
+}
+
+
+.menu-items:hover > .menu-item{
+    opacity: 0.5;
+}
+
+.menu-items:hover ~ #menu-background{
+    background-position: 0% -25%;
+}
+
+//Background Animation
+
+#menu-background{
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(
+      var(--text-color) 9%,
+      transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 10vmin 10vmin;
+
+    position: relative;
+    top: 0px;
+    bottom: 0px;  
+    left: -80%;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+// #menu[data-active-index="0"] > #menu-background{
+//     background-position: 0% -25%;
+// }
+
+// #menu[data-active-index="1"] > #menu-background{
+//     background-position: 0% -50%;
+// }
+
+// #menu[data-active-index="2"] > #menu-background{
+//     background-position: 0% -75%;
+// }
+
+// #menu[data-active-index="3"] > #menu-background{
+//     background-position: 0% -100%;
+// }
+
+@media screen and (max-width: 1240px) {
+    #menu-background{
+        left: -85%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .menu-item{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-item{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #menu-background{
+        background-size: 13vmin 13vmin;
+        left: -80%;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .menu-item{
+        font-size: 30px;
+        padding: clamp(0.25rem,0vw,1rem)0rem;
+    }
+}
