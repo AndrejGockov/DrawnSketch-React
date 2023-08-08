@@ -1,0 +1,140 @@
+//Tool Menu
+.tool-menu{
+    float: right;
+    height: 4em;
+    width: 5em;
+    margin: 0;
+    padding: 0;
+
+    border-radius: 57% 51% 0% 70% / 0% 0% 42% 81% ;
+    background-color: var(--background-tertiary);
+}
+
+.tool-menu .menu{
+    padding-top: 10px;
+    padding-left: 25px;
+
+    fill: var(--text-color);
+    width:  40px;
+    height: 40px;
+    transition: 0.3s ease;
+}
+
+.tool-menu .checkbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.tools{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 62px;
+    border-radius: 10px;
+    
+    background: var(--background-tertiary);
+    visibility: visible;
+    transform: translate(0%) 0.2s;
+    transition: 0.3s ease;
+}
+
+.tool-menu input[type="checkbox"]:checked ~ .tools{
+    transform: translate(150%);
+    visibility: hidden;
+}
+
+.tool svg{
+    margin: 10px;
+
+    height: 28px;
+    width: 28px;
+    fill: var(--text-color);
+    cursor: pointer;
+}
+
+#color{
+    margin: 10px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+
+//Brush Size
+
+.brush-size{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: inherit;
+
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    background: var(--background-tertiary);
+    visibility: hidden;
+}
+
+.brush-size input[type="range"]{
+    background-color: var(--text-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+.brush-size input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: var(--background-primary);
+}
+
+//Eraser Size
+
+.eraser-size{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: inherit;
+
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    background: var(--background-tertiary);
+    visibility: hidden;
+}
+
+.eraser-size input[type="range"]{
+    background-color: var(--text-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+.eraser-size input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: var(--background-primary);
+}
+
+@media screen and (max-width: 736px) {
+    .box{
+      padding: 0.5em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .about-title{
+      font-size: 40px;
+    }
+
+    .about-text{
+      padding: 3em 0em 0em 0em;
+      font-size: 16px;
+    }
+
+    .box{
+      padding: 0.3em;
+    }
+}

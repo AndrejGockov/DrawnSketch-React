@@ -1,0 +1,14 @@
+//Roots
+:root{
+    --background-primary: #101415;
+    --background-secondary: #1c2022;
+    --background-tertiary: #0b0f10;
+
+    --text-color:#c5c8c9;
+
+    --background: linear-gradient(90deg, var(--background-secondary) 0%, var(--background-primary) 100%);
+}
+
+// @mixin Background{
+//     background: linear-gradient(90deg, var(--background-secondary) 0%, var(--background-primary) 100%);
+// }
