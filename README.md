@@ -1,15 +1,25 @@
 # Paint-Website-SketchNDraw
-A paint website made with React
 
 ## About the project
--[Summary](Summary)
+- [Summary](#Summary)
+- [Features](#Features)
+- [Made with](#Made-with)
+- [How it works](#How-it-works)
 
 ## Summary
-I made this project in my final year of highschool and
+SketchNDraw is a webiste made in React that creates an easy to use UI that allows the user to: load up the website, get an empty canvas, and start drawing.
 
 ## Features
+SketchNDraw's features include:
+- #### Brush Tool
+- #### Changing brush size and color
+- #### Eraser Tool
+- #### Downloading drawings
+- #### Multilanguage
 
-## Dependencies
+## Made with
 - ### React
 - ### I18Next
-- ###
+
+## How it works
+sefesferfrfewrf
