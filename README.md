@@ -40,16 +40,18 @@ And so, many of the functionalities orient around this canvas element:
         onTouchEnd={stopDrawing}
       />
 
+<br />
 As for drawing on the canvas, it's separated into three consts:
 - startDrawing - Begins the drawing path with one dot
 -  Drawing - Continues the drawing path and follows the users movement on the canvas
 - stopDrawing - Ends the drawing path until the user clicks on the canvas again
-  
+
+<br />
 They all run with the boolean:
 
     const [isDrawing, setIsDrawing] = useState(false);
 
 The boolean is set to false.
-Once the user interacts with the canvas, the startDrawing const is called, and it's set to true. 
-It's then repeadtedly checked, in the Drawing const, and if true it will continue drawing and following the user around the canvas.
+Once the user interacts with the canvas, the startDrawing const is called, and it's set to true. <br />
+It's then repeadtedly checked, in the Drawing const, and if true it will continue drawing and following the user around the canvas. <br />
 After the user stops it's set to false in stopDrawing and it stops following the users movement on the canvas.
