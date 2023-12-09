@@ -10,12 +10,12 @@
 SketchNDraw is a webiste made in React that creates an easy to use UI that allows the user to: load up the website, get an empty canvas, and start drawing.
 
 ## Features
-  SketchNDraw's features include:
+SketchNDraw's features include:
 - #### Brush Tool
 - #### Changing brush size and color
 - #### Eraser Tool
 - #### Downloading drawings
-- #### Multilanguage
+- #### Multilanguage support
 
 ## Made with
 - ### React
@@ -50,7 +50,7 @@ They all run with the boolean:
 
     const [isDrawing, setIsDrawing] = useState(false);
 
-The boolean is set to false.
+The boolean is set to false. <br />
 Once the user interacts with the canvas, the startDrawing const is called, and it's set to true. <br />
 It's then repeadtedly checked, in the Drawing const, and if true it will continue drawing and following the user around the canvas. <br />
 After the user stops it's set to false in stopDrawing and it stops following the users movement on the canvas.
