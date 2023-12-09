@@ -40,7 +40,6 @@ And so, many of the functionalities orient around this canvas element:
         onTouchEnd={stopDrawing}
       />
 
-<br />
 As for drawing on the canvas, it's separated into three consts:
 - startDrawing - Begins the drawing path with one dot
 -  Drawing - Continues the drawing path and follows the users movement on the canvas
