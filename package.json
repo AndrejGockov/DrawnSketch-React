@@ -1,6 +1,6 @@
 {
   "homepage": "https://AndrejGockov.github.io/sketchndraw-react",
-  "name": "sketchndraw",
+  "name": "sketchndraw-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
