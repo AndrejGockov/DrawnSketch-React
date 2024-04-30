@@ -1,6 +1,6 @@
 {
-  "short_name": "SketchDraw",
-  "name": "SketchNDraw",
+  "short_name": "sketchndraw-react",
+  "name": "sketchndraw-react",
   "icons": [
     {
       "src": "favicon.ico",
