@@ -1,0 +1,102 @@
+//Settings
+
+#settings{
+  height: 100vh;
+  align-items: center;
+  background: var(--background);
+}
+
+.settings-items{
+    margin-left: clamp(12rem, 40vw, 8rem);
+}
+
+//Title
+.settings-title{
+  font-size: 50px;
+  display: block;
+  padding: clamp(0.25rem,0.5vw,1rem)0rem;
+  color: var(--text-color);
+}
+
+//Settings Options
+.settings-options{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+
+  padding: 3em 0em 0em 0em;
+}
+
+//Select
+.settings-option{
+  display: block;
+  padding: clamp(0.25rem,0vw,0rem)0rem;
+
+  // background-color: var(--background-primary);
+  // border-radius: 10px;
+  padding: 0.7em;
+}
+
+.settings-option h3{
+  display: block;
+  padding-bottom: 1em;
+
+  font-size: 25px;
+}
+
+.settings-option button{
+  background-color: var(--background-primary);
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+
+  padding: 0.9em;
+  margin: 1em;
+
+  font-size: 20px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.settings-option button:hover{
+  scale: 1.5;
+}
+
+  //Responsitivity
+
+@media screen and (max-width: 736px) {
+    .settings-items{
+      margin-left: clamp(2rem, 20vw,28rem);
+    }
+
+    .settings-title{
+      font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .settings-title{
+      font-size: 30px;
+    }
+
+    .settings-option button{
+      border-radius: 5px;
+      margin: 0.7em;
+      font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .settings-items{
+      margin-left: clamp(1.5rem, 0vw,18rem);
+    }
+
+    .settings-title{
+      font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .settings-title{
+      font-size: 16px;
+    }
+}
