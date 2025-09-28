@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/DrawnSketch.github.io/static/css/main.6be2cfdf.css",
-    "main.js": "/DrawnSketch.github.io/static/js/main.0fd177ea.js",
-    "index.html": "/DrawnSketch.github.io/index.html",
-    "static/media/getFetch.cjs": "/DrawnSketch.github.io/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.6be2cfdf.css.map": "/DrawnSketch.github.io/static/css/main.6be2cfdf.css.map",
-    "main.0fd177ea.js.map": "/DrawnSketch.github.io/static/js/main.0fd177ea.js.map"
+    "main.css": "/static/css/main.6be2cfdf.css",
+    "main.js": "/static/js/main.a53528ac.js",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "main.6be2cfdf.css.map": "/static/css/main.6be2cfdf.css.map",
+    "main.a53528ac.js.map": "/static/js/main.a53528ac.js.map"
   },
   "entrypoints": [
     "static/css/main.6be2cfdf.css",
-    "static/js/main.0fd177ea.js"
+    "static/js/main.a53528ac.js"
   ]
 }
